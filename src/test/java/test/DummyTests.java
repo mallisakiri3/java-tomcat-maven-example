@@ -1,6 +1,6 @@
 package test;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 public class DummyTests {
   protected void run() {
