@@ -20,8 +20,8 @@ node{
       }  
    
       stage('Publish Docker Image'){
-         withCredentials([string(credentialsId: 'dockerpwd_malli', variable: 'dockerPWD_malli')]) {
-              sh "docker login -u mallisakiri3 -p ${dockerPWD_malli}"
+         withCredentials([string(credentialsId: 'dockerpwdmalli', variable: 'dockerPWDmalli')]) {
+              sh "docker login -u mallisakiri3 -p ${dockerPWDmalli}"
          }
         sh 'docker push mallisakiri3/javademo:2.0.0'
       }
